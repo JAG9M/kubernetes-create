@@ -45,9 +45,10 @@ You can follow same procedure in the official  AWS document [Getting started wit
    --zones <AZ-1>,<AZ-2>
    
    example:
-   eksctl create cluster --name valaxy-cluster \
-      --region ap-south-1 \
-   --node-type t2.small \
+   eksctl create cluster --name jag-cluster  \
+   --region us-east-1 \
+   --zones=us-east-1a,us-east-1b,us-east-1c \
+   --node-type t2.micro \
     ```
 
 5. To delete the EKS clsuter 
